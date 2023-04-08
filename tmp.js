@@ -188,7 +188,7 @@ let arr = []
     //console.log(precio)
    // return precio
   } */
-let tragos = [{ nombre: "Franco", pedido: { nombre: "Fernet", precio: 260 } },
+/* let tragos = [{ nombre: "Franco", pedido: { nombre: "Fernet", precio: 260 } },
   { nombre: "juan", pedido: { nombre: "Gancia", precio: 220 } },
   { nombre: "Nico", pedido: { nombre: "Vodka", precio: 285 } },
   { nombre: "Fer", pedido: { nombre: "Martini", precio: 430 } },];
@@ -210,4 +210,10 @@ for (let i = 0; i < tragos.length; i++){
 
 }
 
-  console.log(tragos)
+  console.log(tragos) */
+
+  let current = this.head;
+  while (current) {
+    if ((current.nombre = nombre)) {
+    }
+  }

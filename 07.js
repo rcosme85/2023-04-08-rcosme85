@@ -1,4 +1,4 @@
-const { LinkedList } = require('../DS');
+gitconst { LinkedList } = require('../DS');
 
 /* ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 
@@ -22,6 +22,12 @@ OUTPUT --> Head ➡ ({nombre: "Franco", trago: "Fernet"}) ➡ ({nombre: "Franco"
 
 LinkedList.prototype.encontrarPedidoRepetido = function (nombre) {
    // Tu código aquí:
+  let current = this.head
+  while (current) {
+    if (current.nombre = nombre) {
+      
+    }
+  }
 };
 
 // ⚠️ NO MODIFICAR NADA DEBAJO DE ESTA LINEA ⚠️
