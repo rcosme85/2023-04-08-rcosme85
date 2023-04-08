@@ -28,6 +28,22 @@ REQUISITOS
 
 function ordenarPedidos(tragos) {
    // Tu código aquí:
+  //let precioMayor = 0;
+  //let obj = {};
+  for (let i = 0; i < tragos.length; i++) {
+    //console.log(tragos[i].pedido.precio);
+    //return tragos[i].pedido.precio;
+    let min = i;
+    for (let j = i + 1; j < tragos.length; j++)
+      if (tragos[j].pedido.precio < tragos[min].pedido.precio) {
+        min = j;
+        //return obj;
+      }
+    let aux = tragos[i];
+    tragos[i] = tragos[min];
+    tragos[min] = aux;
+  }
+  return tragos
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

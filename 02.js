@@ -36,6 +36,22 @@ REQUISITOS
 
 function prepararMenú(tragos, tiempos, tiempoLimite) {
    // Tu código aquí:
+  let tragosStack = new Stack()
+  let tiempoStack = new Stack()
+  let objTragos = {}
+  let arrTragos = []
+  let arrTiempos =[]
+  for (let i = 0; i < tiempos.length; i++){
+    if (tiempos[i] < tiempoLimite) {
+      tragosStack.push(tragos[i])
+      tiempoStack.push(tiempos[i])
+    }
+  }
+  
+  objTragos.Tragos = { tragosStack }
+  objTragos.Tiempos = { tiempoStack }
+  console.log(objTragos)
+return objTragos
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

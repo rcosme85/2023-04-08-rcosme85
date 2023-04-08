@@ -33,6 +33,14 @@ No debería de arrojar el error si nos pasan los tragos en minúscula o mayúscu
 
 function consultarPreparacion(tragos) {
    // Tu código aquí:
+  if (tragos.length === 0) return "Por favor verifique bien los nombres de los tragos que quiere solicitar su preparación";
+  let carta = consultarPreparacion(tragos)
+  console.log(carta)
+  for (let i = 0; i < tragos.length; i++){
+    for (const nombre in carta) {
+      
+    }
+  }
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

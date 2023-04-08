@@ -42,8 +42,62 @@ REQUISITOS:
 */
 
 function guardarTragos(tragosQueue) {
-   // Tu código aquí:
+  // Tu código aquí:
+
+  //let newQue = new Queue
+  let obj = {
+    trago: null,
+    cantidad: 0,
+  };
+  //let obj = {}
+
+  let objResultado = {};
+  let cont = 1;
+  //newQue.enqueue(tragosQueue) //"margarita"
+  let primerTrago = tragosQueue.dequeue();
+  //let i = 0;
+  while (tragosQueue.size()) {
+    console.log(tragosQueue.size)
+    console.log(primerTrago);
+    //break;
+    for (let i = 0; i < tragosQueue.length; i++) {
+      if (primerTrago === tragosQueue[i]) {
+        cont++;
+        tragosQueue.dequeue();
+        //i++
+      }
+    }
+
+    objResultado[primerTrago] = { trago: primerTrago, cantidad: cont }
+  
 }
+
+    cont = 1;
+    primerTrago = tragosQueue.dequeue(); 
+  }
+/* let obj = {};
+let objResultado = {};
+let cont = 1;
+let newQue = new Queue();
+//let primerTrago = tragosQueue.dequeue();
+let primerTrago = tragosQueue.shift();
+//console.log(primerTrago)
+while (tragosQueue.length) {
+  //console.log(tragosQueue.length);
+  for (let i = 0; i < tragosQueue.length; i++) {
+    if (primerTrago === tragosQueue[i]) {
+      cont++;
+      tragosQueue.shift();
+      //i++
+    }
+  }
+
+  objResultado[primerTrago] = { trago: primerTrago, canidad: cont };
+  obj = objResultado;
+
+  cont = 1;
+  primerTrago = tragosQueue.shift();
+} */
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = guardarTragos;

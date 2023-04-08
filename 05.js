@@ -22,9 +22,29 @@ REQUISITOS
 
 function encontrarMasCaros(arreglo, precio) {
    // Tu código aquí:
+    let cantidadMayor = 0;
+    let nombreTrago = "";
+    let arr = [];
+    let obj = {};
+    for (let i = 0; i < arreglo.length; i++) {
+      let primerPrecio = arreglo[i].precio;
+      if (primerPrecio > precio) {
+        nombreTrago = arreglo[i].nombre;
+        obj = {
+          nombre: nombreTrago,
+          precio: primerPrecio,
+        };
+        arr.push(obj);
+      }
+      //console.log(precio)
+      // return precio
+  }
+  if (arr.length ===0 ) return "No hay tragos disponibles";
+  return arr
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
-   encontrarMasCaros,
+  encontrarMasCaros,
+  
 };

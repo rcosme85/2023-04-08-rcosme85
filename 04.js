@@ -28,6 +28,23 @@ REQUISITOS
 
 function encontrarTragoPopular(tragos) {
    // Tu código aquí:
+ // let objTrago = {};
+  let cantidadMayor = 0;
+  let nombreTrago = "";
+  for (const trago in tragos) {
+    for (const cant in trago) {
+      if (tragos[trago].cantidadVendida > cantidadMayor) {
+        cantidadMayor = tragos[trago].cantidadVendida;
+        nombreTrago = tragos[trago].nombre;
+      }
+    }
+  }
+  let objResultado = {
+    nombre: nombreTrago,
+    cantidadVendida: cantidadMayor,
+    tragoMasVendido: true,
+  };
+  return objResultado
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
