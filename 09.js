@@ -37,8 +37,16 @@ REQUISITOS
 */
 
 BinarySearchTree.prototype.consultarTragos = function (efectivo) {
-   // Tu código aquí:
-};
+  // Tu código aquí:
+  let obj = this.value
+  let tragos = []
+  if (efectivo >= obj["precio"]) {
+    tragos.push(tragos["nombre"])
+  }
+  if (this.left) this.left.consultarTragos(efectivo)
+  if (this.right) this.right.consultarTragos(efectivo)
+  return tragos
+}
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {

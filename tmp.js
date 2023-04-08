@@ -211,9 +211,22 @@ for (let i = 0; i < tragos.length; i++){
 }
 
   console.log(tragos) */
+  function LinkedList() {
+    this.head = null;
+  }
+const lista1 = new LinkedList();
+const lista2 = new LinkedList();
+lista1.add({ nombre: "Franco", trago: "Fernet" });
+lista1.add({ nombre: "Martin", trago: "Gancia" });
+lista1.add({ nombre: "Franco", trago: "Fernet" });
+lista1.add({ nombre: "Mateo", trago: "Cerveza Corona" });
+lista1.add({ nombre: "Nico", trago: "Negroni" });
+lista1.add({ nombre: "Ale", trago: "Cerveza IPA" });
 
   let current = this.head;
-  while (current) {
+while (current) {
+  console.log(current)
+  return current
     if ((current.nombre = nombre)) {
     }
   }

@@ -22,12 +22,17 @@ OUTPUT --> Head ➡ ({nombre: "Franco", trago: "Fernet"}) ➡ ({nombre: "Franco"
 
 LinkedList.prototype.encontrarPedidoRepetido = function (nombre) {
    // Tu código aquí:
-  let current = this.head
-  while (current) {
-    if (current.nombre = nombre) {
-      
+ let newLista = new LinkedList
+  if(!newLista.head) return false
+  let current = newLista.head
+  console.log(current)
+  return current
+  /* while (current) {
+    if (current.nombre === nombre) {
+      console.log(current.nombre)
+      return nombre
     }
-  }
+  } */
 };
 
 // ⚠️ NO MODIFICAR NADA DEBAJO DE ESTA LINEA ⚠️

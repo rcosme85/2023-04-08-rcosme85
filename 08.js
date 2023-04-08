@@ -29,6 +29,8 @@ REQUISITOS
 
 LinkedList.prototype.entregarPedido = function (clientes) {
    // Tu código aquí:
+  let current = this.head
+  
 };
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
