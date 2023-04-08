@@ -41,7 +41,7 @@ BinarySearchTree.prototype.consultarTragos = function (efectivo) {
   let obj = this.value
   let tragos = []
   if (efectivo >= obj["precio"]) {
-    tragos.push(tragos["nombre"])
+    tragos.push(obj["nombre"])
   }
   if (this.left) this.left.consultarTragos(efectivo)
   if (this.right) this.right.consultarTragos(efectivo)
